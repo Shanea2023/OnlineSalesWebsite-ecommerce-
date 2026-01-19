@@ -1,0 +1,8 @@
+@page
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Seller")]
+@model ChapsAll.Web.Areas.Seller.Pages.IndexModel
+<h1>Seller Dashboard</h1>
+<p>Manage products, discounts, and games.</p>
+
+

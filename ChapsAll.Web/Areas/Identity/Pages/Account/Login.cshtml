@@ -1,0 +1,34 @@
+@page
+@model ChapsAll.Web.Areas.Identity.Pages.Account.LoginModel
+@using Microsoft.AspNetCore.Authorization
+@attribute [AllowAnonymous]
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>@ViewData["Title"]</h1>
+        <form method="post" asp-antiforgery="true">
+            <div class="form-group mb-3">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-check mb-3">
+                <input asp-for="Input.RememberMe" class="form-check-input" />
+                <label class="form-check-label" asp-for="Input.RememberMe"></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Log in</button>
+        </form>
+    </div>
+</div>
+
+<partial name="/Pages/Shared/_ValidationScriptsPartial.cshtml" />
+
+

@@ -1,0 +1,8 @@
+@page
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Customer")] 
+@model ChapsAll.Web.Areas.Customer.Pages.IndexModel
+<h1>Customer Dashboard</h1>
+<p>Browse products, view cart, and orders.</p>
+
+

@@ -1,0 +1,8 @@
+@page
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@model ChapsAll.Web.Areas.Admin.Pages.IndexModel
+<h1>Admin Dashboard</h1>
+<p>Manage users, roles, and approve discounts.</p>
+
+

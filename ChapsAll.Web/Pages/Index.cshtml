@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "ChapsAll";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ChapsAll</h1>
+    <p>Your marketplace for everything. Sign in to continue.</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+        <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Sign In</a>
+        <a class="btn btn-outline-secondary" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </div>
+</div>
